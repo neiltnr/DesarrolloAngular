@@ -1,0 +1,54 @@
+table {
+    width: 100%;
+    ;
+  }
+  th{
+    width: 25px;
+  }
+  .pointer{
+    cursor: pointer;
+  }
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .foot
+  {
+      width:100%;
+      background-color: #f6bc28 ;
+  }
+  
+  .foot .grupo1{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 50px;
+      padding: 45px 0px;
+  }
+  
+  .foot .grupo1 .box figure{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .foot .grupo1 .box figure img{
+      width: 150px;
+  
+  }
+  
+  .foot .grupo1 .box h2{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px;
+  }
+  
+  .foot .grupo1 .box p{
+      color: white;
+      margin-bottom: 10px;
+  }

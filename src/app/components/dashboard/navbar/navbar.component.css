@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  div {
+    width: 58%;
+  }
+
+  button{
+
+    font-size:18px;
+  }
+  
