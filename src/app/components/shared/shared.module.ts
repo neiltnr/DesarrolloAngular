@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HttpClientModule,
     MatTableModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatPaginatorModule
   ],
   exports:[
     CommonModule,
@@ -39,7 +41,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HttpClientModule,
     MatTableModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatPaginatorModule
   ]
 })
 export class SharedModule { }

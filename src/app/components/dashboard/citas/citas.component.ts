@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { especialista } from 'src/app/models/especialistacita';
 import { EspecialistacitaService } from 'src/app/services/especialistacita.service';
@@ -18,11 +19,15 @@ export class CitasComponent implements OnInit {
   displayedColumns: string[] = ['aula', 'name', 'area', 'estado','acciones'];
  
   dataSource!:MatTableDataSource<any>;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   constructor(private _especialistaService:EspecialistacitaService) { }
 
   ngOnInit(): void {
     this.cargaEspecialista();
+  }
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
   cargaEspecialista(){
     this.listEspecialista=this._especialistaService.getespecialitsa();
